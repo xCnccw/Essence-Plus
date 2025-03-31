@@ -1,0 +1,98 @@
+:root {
+    /* colors */
+    --es-color-white: #ffffff;
+    --es-color-black: #000000;
+    --colors: (
+      primary: #409eff,
+      success: #67c23a,
+      warning: #e6a23c,
+      danger: #f56c6c,
+      info: #909399
+    );
+  
+    @each $val, $color in var(--colors) {
+      --es-color-$(val): $(color);
+      @for $i from 3 to 9 by 2 {
+        --es-color-$(val)-light-$(i): mix(#fff, $(color), .$(i))
+      }
+      --es-color-$(val)-light-8: mix(#fff, $(color), .8);
+      --es-color-$(val)-dark-2: mix(#000, $(color), .2);
+    }
+  
+    --es-bg-color: #ffffff;
+    --es-bg-color-page: #f2f3f5;
+    --es-bg-color-overlay: #ffffff;
+    --es-text-color-primary: #303133;
+    --es-text-color-regular: #606266;
+    --es-text-color-secondary: #909399;
+    --es-text-color-placeholder: #a8abb2;
+    --es-text-color-disabled: #c0c4cc;
+    --es-border-color: #dcdfe6;
+    --es-border-color-light: #e4e7ed;
+    --es-border-color-lighter: #ebeef5;
+    --es-border-color-extra-light: #f2f6fc;
+    --es-border-color-dark: #d4d7de;
+    --es-border-color-darker: #cdd0d6;
+    --es-fill-color: #f0f2f5;
+    --es-fill-color-light: #f5f7fa;
+    --es-fill-color-lighter: #fafafa;
+    --es-fill-color-extra-light: #fafcff;
+    --es-fill-color-dark: #ebedf0;
+    --es-fill-color-darker: #e6e8eb;
+    --es-fill-color-blank: #ffffff;
+  
+    /* border */
+    --es-border-width: 1px;
+    --es-border-style: solid;
+    --es-border-color-hover: var(--es-text-color-disabled);
+    --es-border: var(--es-border-width) var(--es-border-style) var(--es-border-color);
+    --es-border-radius-base: 4px;
+    --es-border-radius-small: 2px;
+    --es-border-radius-round: 20px;
+    --es-border-radius-circle: 100%;
+  
+    /*font*/
+    --es-font-size-extra-large: 20px;
+    --es-font-size-large: 18px;
+    --es-font-size-medium: 16px;
+    --es-font-size-base: 14px;
+    --es-font-size-small: 13px;
+    --es-font-size-extra-small: 12px;
+    --es-font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "\5fae\8f6f\96c5\9ed1", Arial, sans-serif;
+    --es-font-weight-primary: 500;
+  
+    /*disabled*/
+    --es-disabled-bg-color: var(--es-fill-color-light);
+    --es-disabled-text-color: var(--es-text-color-placeholder);
+    --es-disabled-border-color: var(--es-border-color-light);
+    
+    /*animation*/
+    --es-transition-duration: .3s;
+    --es-transition-duration-fast: .2s;
+  
+  }
+
+html.dark {
+    --es-text-color-primary: #ffffff;
+    --es-text-color-regular: #e5eaf3;
+    --es-text-color-secondary: #a3a6ad;
+    --es-text-color-placeholder: #8d9095;
+    --es-text-color-disabled: #6c6e72;
+    
+    --es-bg-color: #141414;
+    --es-bg-color-page: #0a0a0a;
+    --es-bg-color-overlay: #1d1e1f;
+    
+    --es-border-color: #4c4d4f;
+    --es-border-color-light: #363637;
+    --es-border-color-lighter: #1d1d1d;
+    --es-border-color-dark: #58585b;
+    --es-border-color-darker: #636466;
+
+    --es-fill-color: #262727;
+    --es-fill-color-light: #1d1d1d;
+    --es-fill-color-lighter: #141414;
+    --es-fill-color-dark: #363637;
+    --es-fill-color-darker: #424243;
+    --es-fill-color-blank: transparent;
+}
