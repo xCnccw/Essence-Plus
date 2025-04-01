@@ -1,0 +1,58 @@
+.es-collapse {
+    --es-collapse-border-color: var(--es-border-color-light);
+    --es-collapse-header-height: 48px;
+    --es-collapse-header-bg-color: var(--es-fill-color-blank);
+    --es-collapse-header-text-color: var(--es-text-color-primary);
+    --es-collapse-header-font-size: 13px;
+    --es-collapse-content-bg-color: var(--es-fill-color-blank);
+    --es-collapse-content-font-size: 13px;
+    --es-collapse-content-text-color: var(--es-text-color-primary);
+    --es-collapse-disabled-text-color: var(--es-disabled-text-color);
+    --es-collapse-disabled-border-color: var(--es-border-color-lighter);
+    border-top: 1px solid var(--es-collapse-border-color);
+    border-bottom: 1px solid var(--es-collapse-border-color);
+  }
+  .es-collapse-item__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--es-collapse-header-height);
+    line-height: var(--es-collapse-header-height);
+    background-color: var(--es-collapse-header-bg-color);
+    color: var(--es-collapse-header-text-color);
+    cursor: pointer;
+    font-size: var(--es-collapse-header-font-size);
+    font-weight: 500;
+    transition: border-bottom-color var(--es-transition-duration);
+    outline: none;
+    border-bottom: 1px solid var(--es-collapse-border-color);
+    &.is-disabled {
+      color: var(--es-collapse-disabled-text-color);
+      cursor: not-allowed;
+      background-image: none;
+    }
+    &.is-active {
+      border-bottom-color: transparent;
+      .header-angle {
+        transform: rotate(90deg);
+      }
+    }
+    .header-angle {
+      transition: transform var(--es-transition-duration);
+    }
+  }
+  .es-collapse-item__content {
+    will-change: height;
+    background-color: var(--es-collapse-content-bg-color);
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: var(--es-collapse-content-font-size);
+    color: var(--es-collapse-content-text-color);
+    border-bottom: 1px solid var(--es-collapse-border-color);
+    padding-bottom: 25px;
+  }
+  .slide-enter-active, .slide-leave-active {
+    transition: height var(--es-transition-duration);
+  }
+  
+  

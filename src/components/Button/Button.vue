@@ -6,8 +6,12 @@
         'is-round': round,
         'is-circle': circle,
         'is-disabled': disabled,
-    }" :disabled="disabled" :autofocus="autofocus" :type="nativetype"
+        'is-loading': loading,
+
+    }" :disabled="disabled||loading" :autofocus="autofocus" :type="nativetype"
     @click="handleClick">
+    <Icon icon="spinner" spin v-if="loading" />
+    <Icon :icon="icon" v-if="icon" />
         <span>
             <slot></slot>
         </span>
@@ -16,6 +20,7 @@
 
 <script lang="ts" setup>
 import type { ButtonProps } from './type.ts'
+import Icon from '../Icon/Icon.vue'
 import { ref } from 'vue'
 defineOptions({
     name: 'EsButton'

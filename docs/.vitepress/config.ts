@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { fileURLToPath, URL } from 'node:url'
 import { containerPreview, componentPreview } from '@vitepress-demo-preview/plugin'
-import path from 'path'
 
 export default defineConfig({
     title: 'Essence Plus',
@@ -25,7 +24,8 @@ export default defineConfig({
                 {
                     text: 'Basic Components',
                     items: [
-                        { text: 'Button', link: '/components/button' }
+                        { text: 'Button', link: '/components/button' },
+                        { text: 'Collapse', link: '/components/collapse' }
                     ]
                 }
             ]
@@ -42,7 +42,7 @@ export default defineConfig({
             alias: [
                 {
                     find: '@',
-                    replacement: path.resolve(__dirname, '../../src')
+                    replacement: fileURLToPath(new URL('../../src', import.meta.url))
                 }
             ]
         }
