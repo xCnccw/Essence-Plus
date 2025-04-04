@@ -1,0 +1,88 @@
+.es-alert {
+    --es-alert-bg-color: var(--es-color-info-light-9);
+    --es-alert-border-color: var(--es-border-color-lighter);
+    --es-alert-padding: 15px 19px;
+    --es-alert-close-size: 16px;
+    --es-alert-close-icon-color: var(--es-text-color-placeholder);
+    --es-alert-close-hover-color: var(--es-text-color-secondary);
+  }
+  .es-alert {
+    width: fit-content;
+    max-width: calc(100% - 32px);
+    box-sizing: border-box;
+    border-radius: var(--es-border-radius-base);
+    border-width: var(--es-border-width);
+    border-style: var(--es-border-style);
+    border-color: var(--es-alert-border-color);
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    background-color: var(--es-alert-bg-color);
+    padding: var(--es-alert-padding);
+    display: flex;
+    align-items: center;
+    transition: top var(--es-transition-duration), opacity var(--es-transition-duration), transform var(--es-transition-duration);
+    .es-alert__content {
+      color: var(--es-alert-text-color);
+      overflow-wrap: anywhere;
+    }
+    &.closable .es-alert__content {
+      padding-right: 30px;
+    }
+    .es-alert__close {
+      display: flex;
+      align-items: center;
+    }
+    .es-alert__close svg {
+      cursor: pointer;
+    }
+    &.is-component {
+        z-index: auto; 
+        position: static;
+        transform: none;
+        margin: 10px 0;
+        width: 100%;
+        max-width: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+  }
+
+
+  
+  @each $val in info,success,warning,danger { 
+    .es-alert--$(val) {
+      --es-alert-bg-color: var(--es-color-$(val)-light-9);
+      --es-alert-border-color: var(--es-color-$(val)-light-8);
+      --es-alert-text-color: var(--es-color-$(val));
+      .es-alert__close {
+        --es-icon-color: var(--es-color-$(val));
+      }
+
+      &.is-dark {
+        --es-alert-bg-color: var(--es-color-$(val));
+        --es-alert-border-color: var(--es-color-$(val));
+        --es-alert-text-color: var(--es-color-white);
+  
+        .es-alert__close {
+          --es-icon-color: var(--es-color-white);
+        }
+      }
+    }
+  }
+
+  .fade-enter-from, .fade-leave-to {
+    opacity: 0;
+    transform: translate(-50%, -100%);
+  }
+  .fade-enter-active, .fade-leave-active {
+    transition: all 0.3s ease;
+  }
+
+
+
+
+  

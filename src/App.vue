@@ -4,7 +4,9 @@ import Button from './components/Button/Button.vue'
 import Collapse from './components/Collapse/Collapse.vue'
 import Item from './components/Collapse/CollapseItem.vue'
 import Icon from './components/Icon/Icon.vue'
-import { ref, onMounted } from 'vue'
+import Alert from './components/Alert/Alert.vue'
+import { createAlert } from './components/Alert/createAlert'
+import { ref, onMounted, h } from 'vue'
 import type { ButtonInstance } from './components/Button/type.ts'
 const buttonRef = ref<ButtonInstance | null>(null)
 const openedValue = ref(['a'])
@@ -12,12 +14,18 @@ onMounted(() => {
   if (buttonRef.value) {
     console.log(buttonRef.value.ref)
   }
-
+  createAlert({
+    message: h('p', 'Hello VNode!'),
+    effect: 'dark',
+    type: 'success',
+    duration: 3000,
+    closable: true
+  })
 })
 </script>
 
 <template>
-
+  <Alert>123123</Alert>
   <Button ref="buttonRef">Test Button</Button>
   <Button type="success" plain>Plain Button</Button>
   <Button round type="danger">Round Button</Button>

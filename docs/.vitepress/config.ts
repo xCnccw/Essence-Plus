@@ -25,7 +25,8 @@ export default defineConfig({
                     text: 'Basic Components',
                     items: [
                         { text: 'Button', link: '/components/button' },
-                        { text: 'Collapse', link: '/components/collapse' }
+                        { text: 'Collapse', link: '/components/collapse' },
+                        { text: 'Alert', link: '/components/Alert' },
                     ]
                 }
             ]
