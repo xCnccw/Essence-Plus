@@ -26,7 +26,7 @@ export default defineConfig({
                     items: [
                         { text: 'Button', link: '/components/button' },
                         { text: 'Collapse', link: '/components/collapse' },
-                        { text: 'Alert', link: '/components/Alert' },
+                        { text: 'Alert', link: '/components/alert' },
                     ]
                 }
             ]
