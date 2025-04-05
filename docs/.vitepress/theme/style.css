@@ -1,0 +1,17 @@
+/* 给首页的 features 卡片添加毛玻璃效果 */
+.VPFeatures .VPFeature {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    color: var(--vp-c-text-1);
+    transition: all 0.3s ease;
+  }
+  
+  /* dark 模式下调整颜色 */
+  html.dark .VPFeatures .VPFeature {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  

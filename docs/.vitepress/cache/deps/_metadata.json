@@ -1,61 +1,82 @@
 {
-  "hash": "8970fa4c",
+  "hash": "eb1889ba",
   "configHash": "6adebc8c",
-  "lockfileHash": "970d6a3a",
-  "browserHash": "f7033a17",
+  "lockfileHash": "a76f071e",
+  "browserHash": "0c2a6a0f",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "20eb6246",
+      "fileHash": "353ea3d1",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "1f163183",
+      "fileHash": "58c14756",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "257c96d2",
+      "fileHash": "03f55a3d",
       "needsInterop": false
     },
     "@vitepress-demo-preview/component": {
       "src": "../../../../node_modules/@vitepress-demo-preview/component/dist/preview-component.js",
       "file": "@vitepress-demo-preview_component.js",
-      "fileHash": "c9cd3dc7",
+      "fileHash": "7cfd2d54",
       "needsInterop": false
     },
     "@fortawesome/free-solid-svg-icons": {
       "src": "../../../../node_modules/@fortawesome/free-solid-svg-icons/index.mjs",
       "file": "@fortawesome_free-solid-svg-icons.js",
-      "fileHash": "b3652c2d",
+      "fileHash": "090e386f",
       "needsInterop": false
     },
     "@fortawesome/fontawesome-svg-core": {
       "src": "../../../../node_modules/@fortawesome/fontawesome-svg-core/index.mjs",
       "file": "@fortawesome_fontawesome-svg-core.js",
-      "fileHash": "90ce6089",
+      "fileHash": "4a0cc614",
+      "needsInterop": false
+    },
+    "three": {
+      "src": "../../../../node_modules/three/build/three.module.js",
+      "file": "three.js",
+      "fileHash": "270b9c57",
+      "needsInterop": false
+    },
+    "vanta/src/vanta.birds": {
+      "src": "../../../../node_modules/vanta/src/vanta.birds.js",
+      "file": "vanta_src_vanta__birds.js",
+      "fileHash": "bd47f064",
       "needsInterop": false
     },
     "lodash-es": {
       "src": "../../../../node_modules/lodash-es/lodash.js",
       "file": "lodash-es.js",
-      "fileHash": "baea591b",
+      "fileHash": "a0365361",
       "needsInterop": false
     },
     "@fortawesome/vue-fontawesome": {
       "src": "../../../../node_modules/@fortawesome/vue-fontawesome/index.es.js",
       "file": "@fortawesome_vue-fontawesome.js",
-      "fileHash": "a2b36455",
+      "fileHash": "9c0ac726",
+      "needsInterop": false
+    },
+    "vanta/src/vanta.waves": {
+      "src": "../../../../node_modules/vanta/src/vanta.waves.js",
+      "file": "vanta_src_vanta__waves.js",
+      "fileHash": "4e424e0a",
       "needsInterop": false
     }
   },
   "chunks": {
     "chunk-LW4I4DCF": {
       "file": "chunk-LW4I4DCF.js"
+    },
+    "chunk-BK5NEV6H": {
+      "file": "chunk-BK5NEV6H.js"
     },
     "chunk-3IJK52MP": {
       "file": "chunk-3IJK52MP.js"

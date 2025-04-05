@@ -19,3 +19,11 @@ features:
   - title: Customizable
     details: Support theme customization to meet personalized needs
 ---
+
+<!-- # 欢迎使用 Essence Plus -->
+
+<VantaBackground>
+
+</VantaBackground>
+
+

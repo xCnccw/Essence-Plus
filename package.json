@@ -19,6 +19,8 @@
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "lodash-es": "^4.17.21",
     "pinia": "^3.0.1",
+    "three": "^0.124.0",
+    "vanta": "^0.5.24",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
