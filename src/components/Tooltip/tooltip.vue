@@ -29,7 +29,7 @@
     import { ref, watch, reactive, onUnmounted, computed } from 'vue'
     import { createPopper } from '@popperjs/core'
     import type { Instance } from '@popperjs/core'
-    import { debounce } from 'lodash'
+    import debounce from 'lodash/debounce'
     import type { TooltipProps, TooltipEmits, TooltipInstance } from './type'
     import useClickOutside from '../../hooks/useClickOutside'
     defineOptions({
