@@ -6,13 +6,35 @@ import Item from './components/Collapse/CollapseItem.vue'
 import Icon from './components/Icon/Icon.vue'
 import Alert from './components/Alert/Alert.vue'
 import { createAlert } from './components/Alert/createAlert'
-import Tooltip from './components/Tooltip/tooltip.vue'
+import Tooltip from './components/Tooltip/Tooltip.vue'
+import Dropdown from './components/Dropdown/Dropdown.vue'
+import type { MenuOption } from './components/Dropdown/type'
 import { ref, onMounted, h } from 'vue'
 import type { ButtonInstance } from './components/Button/type.ts'
 import type { TooltipInstance } from './components/Tooltip/type.ts'
 const buttonRef = ref<ButtonInstance | null>(null)
 const tooltipRef = ref<TooltipInstance | null>(null)
 const openedValue = ref(['a'])
+const Option: MenuOption[] = [
+  {
+    key: 1,
+    label: 'Option 1',
+  },
+  {
+    key: 2,
+    label: h('h1', 'this is h1'),
+    disabled: true
+  },
+  {
+    key: 3,
+    label: 'Option 3',
+    divided: true
+  },
+  {
+    key: 4,
+    label: 'Option 4',
+  }
+]
 onMounted(() => {
   if (buttonRef.value) {
     console.log(buttonRef.value.ref)
@@ -60,14 +82,26 @@ const close = () => {
 
 
 
-  <Tooltip placement="right-end" trigger="hover" :manual="false" transition="fade" :openDelay="3000" :closeDelay="200"></Tooltip>
+  <Tooltip placement="right-end" trigger="hover" :manual="false" transition="fade" :openDelay="1000" :closeDelay="1000">
     <template #default>
-      <button style="width: 500px;height: 500px;">Click me</button>
+      <button style="width: 200px;height: 200px;">Click me</button>
     </template>
     <template #content>
       <div style="padding: 8px">Custom Tooltip Content</div>
     </template>
   </Tooltip>
+
+
+  <Dropdown :menuOption="Option" trigger="click" :manual="false" transition="fade" :openDelay="100" :closeDelay="100">
+    <template #default>
+      <button>Click me</button>
+    </template>
+    <template #content>
+      <div style="padding: 8px">Custom Tooltip Content</div>
+    </template>
+  </Dropdown>
+
+
 
 </template>
 

@@ -22,7 +22,7 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import Icon from '../Icon/Icon.vue'
 import type { AlertProps } from './type.ts'
-import RenderVnode from './renderVnode.ts'
+import RenderVnode from '../../hooks/renderVnode.ts'
 const props = withDefaults(defineProps<AlertProps>(), {
   type: 'info',
   closable: false,
@@ -76,4 +76,4 @@ const handleClick = () => {
 
 }
 
-</script>
+</script>../../hooks/renderVnode.ts

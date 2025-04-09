@@ -2,87 +2,93 @@
   "hash": "61c4baca",
   "configHash": "6adebc8c",
   "lockfileHash": "cda91443",
-  "browserHash": "72a3e248",
+  "browserHash": "dd273d1b",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "2b01528d",
+      "fileHash": "72ce39f2",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "c87ccaff",
+      "fileHash": "a5232312",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "c722d15c",
+      "fileHash": "7321bffc",
       "needsInterop": false
     },
     "@vitepress-demo-preview/component": {
       "src": "../../../../node_modules/@vitepress-demo-preview/component/dist/preview-component.js",
       "file": "@vitepress-demo-preview_component.js",
-      "fileHash": "164e5c47",
+      "fileHash": "b362b75e",
       "needsInterop": false
     },
     "@fortawesome/free-solid-svg-icons": {
       "src": "../../../../node_modules/@fortawesome/free-solid-svg-icons/index.mjs",
       "file": "@fortawesome_free-solid-svg-icons.js",
-      "fileHash": "f04a1151",
+      "fileHash": "15508048",
       "needsInterop": false
     },
     "@fortawesome/fontawesome-svg-core": {
       "src": "../../../../node_modules/@fortawesome/fontawesome-svg-core/index.mjs",
       "file": "@fortawesome_fontawesome-svg-core.js",
-      "fileHash": "a13e91d3",
+      "fileHash": "9bd6775b",
       "needsInterop": false
     },
     "vanta/src/vanta.waves": {
       "src": "../../../../node_modules/vanta/src/vanta.waves.js",
       "file": "vanta_src_vanta__waves.js",
-      "fileHash": "34df6b54",
+      "fileHash": "2106c9dd",
       "needsInterop": false
     },
     "three": {
       "src": "../../../../node_modules/three/build/three.module.js",
       "file": "three.js",
-      "fileHash": "da873624",
+      "fileHash": "a18e38cd",
       "needsInterop": false
     },
     "lodash-es": {
       "src": "../../../../node_modules/lodash-es/lodash.js",
       "file": "lodash-es.js",
-      "fileHash": "e24689ff",
+      "fileHash": "eacf0efc",
       "needsInterop": false
     },
     "@fortawesome/vue-fontawesome": {
       "src": "../../../../node_modules/@fortawesome/vue-fontawesome/index.es.js",
       "file": "@fortawesome_vue-fontawesome.js",
-      "fileHash": "792252e3",
+      "fileHash": "35829728",
       "needsInterop": false
     },
     "@popperjs/core": {
       "src": "../../../../node_modules/@popperjs/core/lib/index.js",
       "file": "@popperjs_core.js",
-      "fileHash": "784b9300",
+      "fileHash": "e59e0220",
       "needsInterop": false
     },
     "lodash": {
       "src": "../../../../node_modules/lodash/lodash.js",
       "file": "lodash.js",
-      "fileHash": "3d340f5a",
+      "fileHash": "d5aed365",
+      "needsInterop": true
+    },
+    "lodash/debounce": {
+      "src": "../../../../node_modules/lodash/debounce.js",
+      "file": "lodash_debounce.js",
+      "fileHash": "5dba5330",
       "needsInterop": true
     }
   },
   "chunks": {
-    "chunk-LW4I4DCF": {
-      "file": "chunk-LW4I4DCF.js"
-    },
     "chunk-3IJK52MP": {
       "file": "chunk-3IJK52MP.js"
+    },
+    "chunk-LW4I4DCF": {
+      "file": "chunk-LW4I4DCF.js"
     },
     "chunk-BUSYA2B4": {
       "file": "chunk-BUSYA2B4.js"
