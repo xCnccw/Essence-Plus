@@ -51,6 +51,7 @@
     "postcss-for": "^2.1.1",
     "postcss-nested": "^7.0.2",
     "typescript": "~5.8.0",
+    "unplugin-vue-macros": "^2.14.5",
     "vite": "^6.2.1",
     "vite-plugin-vue-devtools": "^7.7.2",
     "vitepress": "^1.6.3",

@@ -12,6 +12,7 @@ import type { MenuOption } from './components/Dropdown/type'
 import { ref, onMounted, h } from 'vue'
 import type { ButtonInstance } from './components/Button/type.ts'
 import type { TooltipInstance } from './components/Tooltip/type.ts'
+import Input from './components/Input/Input.vue'
 const buttonRef = ref<ButtonInstance | null>(null)
 const tooltipRef = ref<TooltipInstance | null>(null)
 const openedValue = ref(['a'])
@@ -53,6 +54,7 @@ const open = () => {
 const close = () => {
   tooltipRef.value?.hide()
 }
+const testvalue= ref()
 </script>
 
 <template>
@@ -100,6 +102,12 @@ const close = () => {
       <div style="padding: 8px">Custom Tooltip Content</div>
     </template>
   </Dropdown>
+
+
+  <br/>
+
+  <Input v-model="testvalue" placeholder="基础文本框，请输入" />
+  <span>{{testvalue}}</span>
 
 
 

@@ -16,7 +16,7 @@ export default defineConfig({
                     text: 'Guide',
                     items: [
                         { text: 'Introduction', link: '/guide/' },
-                        { text: 'Getting Started', link: '/guide/quickstart' }
+                        { text: 'Getting Started', link: '/components/button' }
                     ]
                 }
             ],
@@ -28,6 +28,7 @@ export default defineConfig({
                         { text: 'Collapse', link: '/components/collapse' },
                         { text: 'Alert', link: '/components/alert' },
                         { text: 'Tooltip', link: '/components/tooltip' },
+                        { text: 'Input', link: '/components/input' },
                     ]
                 }
             ]
