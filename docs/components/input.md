@@ -8,45 +8,45 @@ Enter characters using mouse or keyboard.
 
 ## Basic Input
 
-<preview path="../demo/Input/Basic.vue" title="Basic Input" description="Basic usage of the Input component"></preview>
+<preview path="../demo/input/Basic.vue" title="Basic Input" description="Basic usage of the Input component"></preview>
 
 ## Disabled Input
 
 Use the **disabled** prop to specify whether the input is disabled.
 
-<preview path="../demo/Input/Disable.vue" title="Disabled Input" description="Disabled state of the Input component"></preview>
+<preview path="../demo/input/Disable.vue" title="Disabled Input" description="Disabled state of the Input component"></preview>
 
 ## Size Variants
 
 Use the **size** prop to change the size of the input box. Besides the default size, there are two other options: **large** and **small**.
 
-<preview path="../demo/Input/Size.vue" title="Input Sizes" description="Different size variants of the Input component"></preview>
+<preview path="../demo/input/Size.vue" title="Input Sizes" description="Different size variants of the Input component"></preview>
 
 ## Compound Input
 
 You can prepend or append elements such as labels or buttons to the input box using the **prepend** and **append** slots.  
 Use the **prefix** and **suffix** slots to add elements inside the input.
 
-<preview path="../demo/Input/Combo.vue" title="Compound Input" description="Input component with prepend, append, prefix, and suffix"></preview>
+<preview path="../demo/input/Combo.vue" title="Compound Input" description="Input component with prepend, append, prefix, and suffix"></preview>
 
 ## Textarea
 
 For entering multiline text, use a resizable input box.  
 Add the **type="textarea"** prop to convert the input into a native `textarea` element.
 
-<preview path="../demo/Input/Textarea.vue" title="Textarea" description="Multiline input using textarea"></preview>
+<preview path="../demo/input/Textarea.vue" title="Textarea" description="Multiline input using textarea"></preview>
 
 ## Password Input
 
 Use the **show-password** prop to enable a toggleable password visibility button.
 
-<preview path="../demo/Input/Password.vue" title="Password Input" description="Password input with visibility toggle"></preview>
+<preview path="../demo/input/Password.vue" title="Password Input" description="Password input with visibility toggle"></preview>
 
 ## Clearable Input
 
 Use the **clearable** prop to allow one-click clearing of the input box.
 
-<preview path="../demo/Input/Clear.vue" title="Clearable Input" description="Input component with a clear button"></preview>
+<preview path="../demo/input/Clear.vue" title="Clearable Input" description="Input component with a clear button"></preview>
 
 
 ## Props
