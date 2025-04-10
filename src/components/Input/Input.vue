@@ -22,7 +22,7 @@
                     :disabled="disabled" :readonly="readonly" :autocomplete="autocomplete" :placeholder="placeholder"
                     :autofocus="autofocus" :form="form" v-model="innerValue" 
                     @input="handleInput" @change="handleChange" @focus="handleFocus" @blur="handleBlur">
-                <span v-if="$slots.suffix || showClear || showPasswordArea" class="es-input__suffix">
+                <span v-if="$slots.suffix || showClear || showPasswordArea" class="es-input__suffix"  @click="keepFocus">
                     <slot name="suffix" />
                     <Icon icon="circle-xmark" v-if="showClear" class="es-input__clear" @click="clear"
                         @mousedown.prevent="NOOP" />
@@ -46,7 +46,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, watch, computed, useAttrs } from 'vue'
+import { ref, watch, computed, useAttrs,nextTick } from 'vue'
 import type { Ref } from 'vue'
 import type { InputProps, InputEmits } from './type'
 import Icon from '../Icon/Icon.vue'
@@ -61,6 +61,10 @@ const passwordVisible = ref(false)
 const inputRef = ref() as Ref<HTMLInputElement>
 const emits = defineEmits<InputEmits>()
 const NOOP = () => { }
+const keepFocus = async () => {
+    await nextTick()
+    inputRef.value.focus()
+}
 const handleInput = () => {
     emits('update:modelValue', innerValue.value)
     emits('input', innerValue.value)
