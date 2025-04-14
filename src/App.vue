@@ -12,10 +12,12 @@ import type { MenuOption } from './components/Dropdown/type'
 import { ref, onMounted, h } from 'vue'
 import type { ButtonInstance } from './components/Button/type.ts'
 import type { TooltipInstance } from './components/Tooltip/type.ts'
+import Switch from './components/Switch/Switch.vue'
 import Input from './components/Input/Input.vue'
 const buttonRef = ref<ButtonInstance | null>(null)
 const tooltipRef = ref<TooltipInstance | null>(null)
 const openedValue = ref(['a'])
+const switchValue=ref(true)
 const Option: MenuOption[] = [
   {
     key: 1,
@@ -108,6 +110,10 @@ const testvalue= ref()
 
   <Input v-model="testvalue" placeholder="基础文本框，请输入" />
   <span>{{testvalue}}</span>
+
+  <br/>
+
+  <Switch v-model='switchValue' activeText="ON" inactiveText="OFF" size="large"/>
 
 
 

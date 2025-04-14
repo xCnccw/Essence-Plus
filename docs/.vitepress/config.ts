@@ -29,6 +29,7 @@ export default defineConfig({
                         { text: 'Alert', link: '/components/alert' },
                         { text: 'Tooltip', link: '/components/tooltip' },
                         { text: 'Input', link: '/components/input' },
+                        { text: 'Switch', link: '/components/switch' },
                     ]
                 }
             ]
