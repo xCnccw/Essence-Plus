@@ -92,7 +92,7 @@
     }
 
     &.is-checked {
-        .es-switch__core .es-switch-core-action {
+        .es-switch__core .es-switch__core-action {
             left: calc(100% - 13px);
             color: var(--es-switch-on-color);
         }
