@@ -1,5 +1,5 @@
 import type { VNode } from 'vue'
-import type { TooltipProps } from '../tooltipqwe/type'
+import type { TooltipProps } from '../tooltip/type'
 
 export interface DropdownProps extends/* @vue-ignore */ TooltipProps {
     menuOption: MenuOption[];
