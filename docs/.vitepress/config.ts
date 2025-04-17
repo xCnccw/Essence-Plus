@@ -27,7 +27,7 @@ export default defineConfig({
                         { text: 'Button', link: '/components/button' },
                         { text: 'Collapse', link: '/components/collapse' },
                         { text: 'Alert', link: '/components/alert' },
-                        { text: 'Tooltip', link: '/components/tooltip' },
+                        // { text: 'Tooltip', link: '/components/tooltip' },
                         { text: 'Input', link: '/components/input' },
                         { text: 'Switch', link: '/components/switch' },
                         { text: 'Dropdown', link: '/components/dropdown' },
