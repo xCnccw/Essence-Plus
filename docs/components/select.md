@@ -2,7 +2,7 @@
 title: Select | Essence-Plus
 description: Select Component Documentation
 ---
-
+<!-- 
 # Select
 
 A customizable dropdown select component. Supports v-model binding, filtering options, and clearable state.
@@ -34,7 +34,7 @@ You can use the filter functionality to quickly find options.
 | clearable    | Whether to show a clear icon       | `boolean`                   | `false` |
 | filterable   | Whether to enable option filtering | `boolean`                   | `false` |
 
----
+--- -->
 
 ### Select Events
 
