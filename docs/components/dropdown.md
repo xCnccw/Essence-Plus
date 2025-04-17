@@ -2,7 +2,7 @@
 title: Dropdown | Essence-Plus
 description: Dropdown Component Documentation
 ---
-
+<!-- 
 # Dropdown
 
 A dropdown menu component based on `Tooltip`, used to display options triggered by click or hover.
@@ -52,7 +52,7 @@ You can use `ref` to access the dropdown instance and call these methods:
 | Method | Description           |
 |--------|-----------------------|
 | `show()` | show the dropdown   |
-| `hide()` | hide the dropdown   |
+| `hide()` | hide the dropdown   | -->
 
 ---
 
