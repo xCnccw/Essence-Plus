@@ -8,7 +8,7 @@ A lightweight and flexible component for displaying contextual tooltips.
 
 ## Basic Usage  
 Default tooltip usage with `hover` trigger and `bottom` placement. Demonstrates how to wrap content and show simple text tooltips.  
-<preview path="../demo/Tooltip/Basic.vue" title="Basic Usage" description="Default placement and hover trigger"></preview>
+<preview path="../demo/tooltip/Basic.vue" title="Basic Usage" description="Default placement and hover trigger"></preview>
 
 ## Placement  
 Controlled by the `placement` prop. Format: `[direction]-[alignment]`. Directions: `top`, `bottom`, `left`, `right`; Alignments: `start`, `end` (default is centered).  
