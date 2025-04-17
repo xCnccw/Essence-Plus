@@ -1,5 +1,5 @@
 <script setup >
-import Tooltip from '@/components/tooltip/Tooltip.vue'
+import Tooltip from '@/components/tooltip/tooltip.vue'
 import Button from '@/components/Button/Button.vue'
 import { ref } from 'vue'
 const tooltipRef = ref()
@@ -9,4 +9,3 @@ const tooltipRef = ref()
       <Button @click="tooltipRef?.show()">Show</Button>
     </Tooltip>
   </template>
-  

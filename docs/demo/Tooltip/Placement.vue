@@ -1,5 +1,5 @@
 <script setup >
-import Tooltip from '@/components/tooltip/Tooltip.vue'
+import Tooltip from '@/components/tooltip/tooltip.vue'
 import Button from '@/components/Button/Button.vue'
 
 </script>
@@ -22,7 +22,7 @@ import Button from '@/components/Button/Button.vue'
     display: flex;
     gap: 20px; /* 按钮间距 */
     padding: 20px;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: left;
     align-items: center;
 }

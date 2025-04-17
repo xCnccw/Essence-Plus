@@ -24,8 +24,8 @@ import { ref} from 'vue'
 import type { Ref } from 'vue'
 import RenderVnode from '../../hooks/renderVnode.ts'
 import type { DropdownProps, DropdownInstance, DropdownEmits, MenuOption } from './type'
-import Tooltip from '../Tooltip/Tooltip.vue'
-import type { TooltipInstance } from '../Tooltip/type.ts'
+import Tooltip from '../tooltip/tooltip.vue'
+import type { TooltipInstance } from '../tooltip/type.ts'
 const props = withDefaults(defineProps<DropdownProps>(), { hideAfterClick: true })
 const emits = defineEmits<DropdownEmits>()
 const tooltipRef = ref() as Ref<TooltipInstance>
