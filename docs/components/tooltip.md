@@ -2,7 +2,7 @@
 title: Tooltip | Essence-Plus
 description: Tooltip Component Documentation
 ---
-<!-- 
+
 # Tooltip  
 A lightweight and flexible component for displaying contextual tooltips.
 
@@ -47,7 +47,7 @@ Use `openDelay` and `closeDelay` to delay the tooltip's appearance or disappeara
 | transition     | Transition animation name                      | `string`                     | `'fade'`   |
 | openDelay      | Delay before showing (ms)                     | `number`                     | `0`        |
 | closeDelay     | Delay before hiding (ms)                      | `number`                     | `0`        |
-| popperOptions  | Popper.js configuration                       | `Partial<Options>` (import from `@popperjs/core`) | `{}`       | -->
+| popperOptions  | Popper.js configuration                       | `Partial<Options>` (import from `@popperjs/core`) | `{}`       |
 
 ### Events
 
