@@ -26,13 +26,13 @@
 </template>
 
 <script setup lang="ts">
-import Tooltip from '../tooltip/tooltip.vue'
+import Tooltip from '../tooltipqwe/tooltip.vue'
 import Input from '../Input/Input.vue'
 import Icon from '../Icon/Icon.vue'
 import { ref, reactive, computed, watch } from 'vue'
 import type { Ref } from 'vue'
 import type { SelectOption, SelectProps, SelectEmits, SelectStates } from './type'
-import type { TooltipInstance } from '../tooltip/type'
+import type { TooltipInstance } from '../tooltipqwe/type'
 import type { InputInstance } from '../Input/type'
 defineOptions({
     name: 'EsSelect',
