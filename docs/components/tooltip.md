@@ -8,7 +8,7 @@ A lightweight and flexible component for displaying contextual tooltips.
 
 ## Basic Usage  
 Default tooltip usage with `hover` trigger and `bottom` placement. Demonstrates how to wrap content and show simple text tooltips.  
-<preview path="../demo/tooltip/Basic.vue" title="Basic Usage" description="Default placement and hover trigger"></preview>
+<preview path="../demo/Tooltip/Basic.vue" title="Basic Usage" description="Default placement and hover trigger"></preview>
 
 ## Placement  
 Controlled by the `placement` prop. Format: `[direction]-[alignment]`. Directions: `top`, `bottom`, `left`, `right`; Alignments: `start`, `end` (default is centered).  
@@ -20,19 +20,19 @@ Determines how the tooltip is activated. Use the `trigger` prop to choose betwee
 
 ## Content Slot  
 Customize tooltip content using the `content` slot. Supports plain text, HTML, or VNode content.  
-<preview path="../demo/tooltip/Slot.vue" title="Custom Content Slot" description="Define content using slot"></preview>
+<preview path="../demo/Tooltip/Slot.vue" title="Custom Content Slot" description="Define content using slot"></preview>
 
 ## Manual Control  
 Enable `manual` mode to control tooltip visibility programmatically via `show()` and `hide()` methods using `ref`.  
-<preview path="../demo/tooltip/Manual.vue" title="Manual Mode" description="Control tooltip manually via ref"></preview>
+<preview path="../demo/Tooltip/Manual.vue" title="Manual Mode" description="Control tooltip manually via ref"></preview>
 
 ## Transition  
 Customize tooltip animations using the `transition` prop. Accepts a CSS transition name (e.g., `fade`, `slide`, etc).  
-<preview path="../demo/tooltip/Transition.vue" title="Custom Transition" description="Custom animation for tooltip"></preview>
+<preview path="../demo/Tooltip/Transition.vue" title="Custom Transition" description="Custom animation for tooltip"></preview>
 
 ## Open & Close Delay  
 Use `openDelay` and `closeDelay` to delay the tooltip's appearance or disappearance in milliseconds.  
-<preview path="../demo/tooltip/Delay.vue" title="Open and Close Delay" description="Delay for show and hide behavior"></preview>
+<preview path="../demo/Tooltip/Delay.vue" title="Open and Close Delay" description="Delay for show and hide behavior"></preview>
 
 
 ## API
