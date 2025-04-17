@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Tooltip from '@/components/Tooltip/tooltip.vue'
+import Tooltip from '@/components/Tooltip/Tooltip.vue'
 import Button from '@/components/Button/Button.vue'
 import { ref } from 'vue'
 const tooltipRef = ref()
