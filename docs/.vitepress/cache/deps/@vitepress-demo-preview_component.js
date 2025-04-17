@@ -19,6 +19,7 @@ import {
   watch,
   withCtx
 } from "./chunk-LW4I4DCF.js";
+import "./chunk-BUSYA2B4.js";
 
 // node_modules/@vitepress-demo-preview/component/dist/preview-component.js
 var Z = (t, n) => {
@@ -149,7 +150,7 @@ var pe = Z(le, [["render", Ce]]);
 var _e = defineComponent({
   __name: "message-notice",
   props: {
-    content: { default: "Copied！" },
+    content: { default: "复制成功！" },
     close: null
   },
   setup(t, { expose: n }) {
@@ -191,7 +192,7 @@ var V = [];
 var E = {
   open: () => {
     const t = document.createElement("div"), n = createApp(_e, {
-      content: "Copied！",
+      content: "复制成功！",
       close: () => {
         document.body.removeChild(t), V.pop(), n.unmount();
       }

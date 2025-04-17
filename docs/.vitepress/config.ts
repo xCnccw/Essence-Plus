@@ -8,7 +8,7 @@ export default defineConfig({
     themeConfig: {
         nav: [
             { text: 'Guide', link: '/guide/' },
-            { text: 'Components', link: '/components/' }
+            { text: 'Components', link: '/components/button' }
         ],
         sidebar: {
             '/guide/': [
@@ -30,6 +30,8 @@ export default defineConfig({
                         { text: 'Tooltip', link: '/components/tooltip' },
                         { text: 'Input', link: '/components/input' },
                         { text: 'Switch', link: '/components/switch' },
+                        { text: 'Dropdown', link: '/components/dropdown' },
+                        { text: 'Select', link: '/components/select' },
                     ]
                 }
             ]

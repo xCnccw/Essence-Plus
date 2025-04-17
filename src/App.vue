@@ -14,9 +14,11 @@ import type { ButtonInstance } from './components/Button/type.ts'
 import type { TooltipInstance } from './components/Tooltip/type.ts'
 import Switch from './components/Switch/Switch.vue'
 import Input from './components/Input/Input.vue'
+import Select from './components/Select/Select.vue'
 const buttonRef = ref<ButtonInstance | null>(null)
 const tooltipRef = ref<TooltipInstance | null>(null)
 const openedValue = ref(['a'])
+const test=ref('')
 const switchValue=ref(true)
 const Option: MenuOption[] = [
   {
@@ -25,7 +27,8 @@ const Option: MenuOption[] = [
   },
   {
     key: 2,
-    label: h('h1', 'this is h1'),
+    label:'Option 2',
+    // label: h('h1', 'this is h1'),
     disabled: true
   },
   {
@@ -37,6 +40,12 @@ const Option: MenuOption[] = [
     key: 4,
     label: 'Option 4',
   }
+]
+const options2 = [
+  { label: 'hello', value: '1' },
+  { label: 'xyz', value: '2' },
+  { label: 'testing', value: '3' },
+  { label: 'check', value: '4', disabled: true }
 ]
 onMounted(() => {
   if (buttonRef.value) {
@@ -115,6 +124,10 @@ const testvalue= ref()
 
   <Switch v-model='switchValue' activeText="ON" inactiveText="OFF" size="large"/>
 
+  <br/>
+
+  <Select v-model="test" :options="options2" placeholder="输入" clearable filterable></Select>
+  <span>{{ test }}</span>
 
 
 </template>
