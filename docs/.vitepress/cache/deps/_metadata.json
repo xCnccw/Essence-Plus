@@ -1,88 +1,94 @@
 {
-  "hash": "4939f9c5",
+  "hash": "0238894b",
   "configHash": "6adebc8c",
-  "lockfileHash": "41d18523",
-  "browserHash": "fba5db9f",
+  "lockfileHash": "6f18c2db",
+  "browserHash": "f82837e6",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "993e66ab",
+      "fileHash": "43f36c3d",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "f65712af",
+      "fileHash": "0968fdca",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "87d031e5",
+      "fileHash": "803c728a",
       "needsInterop": false
     },
     "@vitepress-demo-preview/component": {
       "src": "../../../../node_modules/@vitepress-demo-preview/component/dist/preview-component.js",
       "file": "@vitepress-demo-preview_component.js",
-      "fileHash": "4a4dd8ce",
+      "fileHash": "2e731df9",
       "needsInterop": false
     },
     "@fortawesome/free-solid-svg-icons": {
       "src": "../../../../node_modules/@fortawesome/free-solid-svg-icons/index.mjs",
       "file": "@fortawesome_free-solid-svg-icons.js",
-      "fileHash": "92edd75a",
+      "fileHash": "36f2c95d",
       "needsInterop": false
     },
     "@fortawesome/fontawesome-svg-core": {
       "src": "../../../../node_modules/@fortawesome/fontawesome-svg-core/index.mjs",
       "file": "@fortawesome_fontawesome-svg-core.js",
-      "fileHash": "ed09aaa4",
+      "fileHash": "da4f7fa1",
       "needsInterop": false
     },
     "vanta/src/vanta.waves": {
       "src": "../../../../node_modules/vanta/src/vanta.waves.js",
       "file": "vanta_src_vanta__waves.js",
-      "fileHash": "717da76c",
+      "fileHash": "fbad986c",
       "needsInterop": false
     },
     "three": {
       "src": "../../../../node_modules/three/build/three.module.js",
       "file": "three.js",
-      "fileHash": "df2e6c35",
+      "fileHash": "4499846c",
       "needsInterop": false
     },
     "lodash-es": {
       "src": "../../../../node_modules/lodash-es/lodash.js",
       "file": "lodash-es.js",
-      "fileHash": "fa8ae94f",
+      "fileHash": "7497ca2c",
       "needsInterop": false
     },
     "@fortawesome/vue-fontawesome": {
       "src": "../../../../node_modules/@fortawesome/vue-fontawesome/index.es.js",
       "file": "@fortawesome_vue-fontawesome.js",
-      "fileHash": "13822aa3",
+      "fileHash": "5e85ac0e",
+      "needsInterop": false
+    },
+    "async-validator": {
+      "src": "../../../../node_modules/async-validator/dist-web/index.js",
+      "file": "async-validator.js",
+      "fileHash": "460e2b44",
       "needsInterop": false
     },
     "@popperjs/core": {
       "src": "../../../../node_modules/@popperjs/core/lib/index.js",
       "file": "@popperjs_core.js",
-      "fileHash": "7db1efed",
+      "fileHash": "65926793",
       "needsInterop": false
     },
     "lodash/debounce": {
       "src": "../../../../node_modules/lodash/debounce.js",
       "file": "lodash_debounce.js",
-      "fileHash": "c724c921",
+      "fileHash": "6c2ef17c",
       "needsInterop": true
     }
   },
   "chunks": {
-    "chunk-3IJK52MP": {
-      "file": "chunk-3IJK52MP.js"
-    },
     "chunk-LW4I4DCF": {
       "file": "chunk-LW4I4DCF.js"
+    },
+    "chunk-3IJK52MP": {
+      "file": "chunk-3IJK52MP.js"
     },
     "chunk-BUSYA2B4": {
       "file": "chunk-BUSYA2B4.js"

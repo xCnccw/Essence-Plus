@@ -18,6 +18,7 @@
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "@popperjs/core": "^2.11.8",
+    "async-validator": "^4.2.5",
     "lodash-es": "^4.17.21",
     "pinia": "^3.0.1",
     "three": "^0.124.0",
