@@ -7,7 +7,7 @@ export default defineConfig({
     description: 'Vue3 Component Library',
     themeConfig: {
         nav: [
-            { text: 'Guide', link: '/guide/' },
+            { text: 'Guide', link: '/guide/start' },
             { text: 'Components', link: '/components/button' }
         ],
         sidebar: {
@@ -15,8 +15,7 @@ export default defineConfig({
                 {
                     text: 'Guide',
                     items: [
-                        { text: 'Introduction', link: '/guide/' },
-                        { text: 'Getting Started', link: '/components/button' }
+                        { text: 'Getting Started', link: '/guide/start' }
                     ]
                 }
             ],

@@ -33,7 +33,7 @@
     import type { TooltipProps, TooltipEmits, TooltipInstance } from './type'
     import useClickOutside from '../../hooks/useClickOutside'
     defineOptions({
-      name: 'esTooltip'
+      name: 'EsTooltip'
     })
     const props = withDefaults(defineProps<TooltipProps>(), {
       placement: 'bottom',
@@ -66,13 +66,13 @@
         ...props.popperOptions
       }
     })
-    
+
     const open = () => {
       openTimes++
       console.log('open times', openTimes)
       isOpen.value = true
       emits('visible-change', true)
-    
+
     }
     const close = () => {
       closeTimes++
@@ -82,7 +82,7 @@
     }
     const openDebounce = debounce(open, props.openDelay)
     const closeDebounce = debounce(close, props.closeDelay)
-    
+
     const openFinal = () => {
       closeDebounce.cancel()
       openDebounce()
@@ -91,7 +91,7 @@
       openDebounce.cancel()
       closeDebounce()
     }
-    
+
     const togglePopper = () => {
       if (isOpen.value) {
         closeFinal()
@@ -121,7 +121,7 @@
     watch(() => props.manual, (isManual) => {
       if (isManual) {
         events = {}
-        outerEvents = {}    
+        outerEvents = {}
       } else {
         attachEvents()
       }
@@ -143,7 +143,7 @@
         }
       }
     }, { flush: 'post'})
-    
+
     onUnmounted(() => {
       popperInstance?.destroy()
     })

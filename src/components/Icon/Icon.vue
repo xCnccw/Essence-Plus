@@ -6,10 +6,10 @@
   <script setup lang="ts">
   import { computed } from 'vue'
   import { omit } from 'lodash-es'
-  import type { IconProps } from './type.ts'    
+  import type { IconProps } from './type.ts'
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
   defineOptions({
-    name: 'esIcon',
+    name: 'EsIcon',
     inheritAttrs: false
   })
   const props = defineProps<IconProps>()
@@ -18,5 +18,4 @@
     return props.color ? { color: props.color } : {}
   })
   </script>
-  
-  
+

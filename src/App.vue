@@ -244,7 +244,7 @@ const clear = () => {
     <EsFormItem prop="password" label="password">
       <Input v-model="formData.password" placeholder="Enter password" />
     </EsFormItem>
-    <EsFormItem >
+    <EsFormItem prop="password" label="button">
       <Button @click.prevent="submit">Submit</Button>
 
       <Button @click.prevent="reset">Reset</Button>
